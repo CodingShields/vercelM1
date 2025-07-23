@@ -1,36 +1,23 @@
 import { Play } from "lucide-react";
 const SectionTwo = () => {
   return (
-    <div className="flex flex-col items-start gap-[64px] self-stretch px-[24px] pb-[96px] w-full max-w-[500px] h-auto max-h-[632px] mx-auto">
-      <div className="bg-[#E4E4E4] py-[32px] px-[24px] w-full max-w-[452px] h-auto max-h-[536px] self-stretch flex flex-col items-start gap-[48px] rounded-[20px]">
-        <div className="flex flex-col items-start max-w-[404px] w-full max-h-[196px] ">
-          <p
-            style={{
-              leadingTrim: "both",
-              textEdge: "cap",
-              fontSize: "14px",
-              fontStyle: "normal",
-              fontWeight: 500,
-              lineHeight: "24px",
-              letterSpacing: "3.36px",
-              textTransform: "uppercase",
-            }}
-            className=" text-[#11121C] text-[14px]  font-futura-pt uppercase leading-[24px] tracking-[3.36px] "
-          >
+    <div className="flex flex-col mx-auto  justify-start gap-[64px]  px-[48px] pb-[96px] max-w-[500px] sm:h-[896px] min-h-full sm:w-[1280px] w-auto sm:min-w-full">
+      <div className="bg-[#E4E4E4] flex flex-col items-start self-stretch gap-[32px]  py-[32px] px-[24px] md:p-[72px] rounded-2xl mx-auto w-full max-w-[1184px] min-h-fit max-h-[800px]">
+        <div className="flex flex-col items-start gap-[8px] max-w-[404px] sm:max-w-[960px] ">
+          <p className="font-futura-pt text-[#11121C] text-[14px]  font-medium uppercase leading-[8px] tracking-[3.36px] ">
             One Mission. One Message. One Day.
           </p>
-
-          <p className="text-SB_Dark_Blue text-[56px] sm:text-[64px] font-bold font-['futura-pt-bold'] leading-[56px] self-stretch justify-start max-h-[171px] h-auto w-full max-w-[404px]">
+          <p className="text-SB_Dark-Blue text-6xl font-bold font-['futura-pt-bold'] leading-[64px] self-stretch justify-start ">
             One Day Can Change{" "}
-            <span class="text-m1 text-6xl font-bold font-['futura-pt-bold'] leading-[56px]">
+            <span class="text-m1 text-6xl font-bold font-['futura-pt-bold'] leading-[64px]">
               Everything
             </span>
           </p>
         </div>
 
-        <div className="w-full max-w-[404px] h-[228px]   relative flex items-center justify-center  bg-[url('/images/section-two-image.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl self-stretch aspect-16/9">
-          <button className="p-[16px] rounded-full font-futuraMed tracking-widest bg-SB_Dark_Blue flex items-center justify-center w-auto max-w-[70px] h-auto max-h-[68px]">
-            <Play color="white" size="auto" strokeWidth={2} />
+        <div className="w-full h-[228px] h-full sm:h-[540px] relative flex items-center justify-center pb-[48px] bg-[url('/images/section-two-image.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl self-stretch aspect-16/9">
+          <button className="absolute  p-[16px] rounded-full font-futuraMed tracking-widest bg-[#11121C] w-[70px] h-[70px]">
+            <Play color="white" size="auto" strokeWidth={3} />
           </button>
         </div>
       </div>

@@ -9,7 +9,7 @@ function App() {
     <div className="w-full  overflow-y-scroll scroll-smooth flex flex-col items-start justify-start bg-[#f0f0f0]">
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
+      {/* <SectionThree /> */}
       {/* <SectionFive /> */}
       {/* <SectionSix /> */}
     </div>
