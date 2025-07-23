@@ -37,7 +37,7 @@ const MapIcon = ({ onClick }) => {
 
 const ChevronIcon = ({ onClick, flipIcon }) => {
   return (
-    <button onClick={onClick} className={`${flipIcon ? "rotate-180" : ""} `}>
+    <button onClick={onClick} className={`${flipIcon ? "rotate-180" : ""}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -88,8 +88,6 @@ const SectionTwo = () => {
   };
 
   const handleMultiMapClick = (loc) => {
-    console.log("Multi map click", loc);
-    console.log("Multi map click", loc);
     setState((prev) => ({
       ...prev,
       currentLocation: loc.id,
@@ -97,7 +95,6 @@ const SectionTwo = () => {
       locationData: loc,
     }));
   };
-  console.log(state);
   return (
     <div className="self-stretch px-4 pb-24 flex flex-col justify-center items-start gap-4 max-w-[1280px] h-full">
       <div className="self-stretch px-6 flex flex-col justify-start items-center gap-12">
@@ -126,7 +123,7 @@ const SectionTwo = () => {
         </div>
       </div>
       <div
-        className={` relative rounded-[20px] inline-flex justify-start items-start gap-12 overflow-hidden w-full h-full max-w-[1248px] lg:max-h-[702px]  max-h-[645px]   
+        className={` relative rounded-[20px] inline-flex justify-start items-start gap-12 overflow-hidden w-full h-full min-w-[1248px] lg:max-h-[702px]  max-h-[645px]   
           ${
             state.mobileShiftMap ? "-translate-x-[450px]" : "-translate-x-0"
           } transition-all ease-linear duration-500 

@@ -1,10 +1,10 @@
-import sectionOneImage from "../assets/section-one-image.jpg";
+import sectionOneImage from "../../public/images/section-one-image.jpg";
 import instagramIcon from "../assets/icons/instagram-icon.svg";
 import facebookIcon from "../assets/icons/facebook-icon.svg";
 import shareIcon from "../assets/icons/share-icon.svg";
 const SectionSix = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-[800px]  lg:px-[160px] pb-[96px] mt-48 px-8">
+    <div className="flex flex-col items-center justify-center w-full h-[800px]  lg:px-[160px] pb-[96px]  px-8">
       <div className="lg:px-[160px] mb-[48px] text-center px-[16px] ">
         <h1
           className="mb-[24px] mx-auto "
@@ -98,7 +98,7 @@ const SectionSix = () => {
           <img
             src={sectionOneImage}
             alt="section-one-image"
-            className="rounded-2xl max-w-[456px] min-h-[250px] object-cover self-stretch h-auto"
+            className="rounded-2xl max-w-[456px] max-h-[250px] object-cover self-stretch h-auto"
           />
         </div>
       </div>
