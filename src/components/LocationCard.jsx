@@ -6,7 +6,7 @@ const LocationCard = ({ open, handleClose, images, data }) => {
   if (!open) return null;
   console.log(data);
   return (
-    <div className="w-96 px-6 pt-3 pb-6 bg-m1-BG rounded-[20px] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.15)] inline-flex flex-col justify-start items-start gap-3 bg-[#31302B] lg:translate-x-1/2 absolute z-40 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div className="w-[368px] px-6 pt-3 pb-6 bg-m1-BG rounded-[20px] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.15)] inline-flex flex-col justify-start items-start gap-3 bg-[#31302B] lg:translate-x-1/2 fixed  z-40 top-10 left-1/2 transform -translate-x-1/2">
       <div className="flex flex-row justify-between items-center w-full ">
         <div className="flex flex-row justify-center items-center space-x-[8px]">
           <button
@@ -32,7 +32,7 @@ const LocationCard = ({ open, handleClose, images, data }) => {
       <img
         src={data.images[imageIndex]}
         alt={`Image of ${data.location}`}
-        className="self-stretch max-h-60 min-h-60 w-[320px]  mx-auto rounded-[20px] inline-flex justify-between items-center object-cover gap-8"
+        className="self-stretch h-[240px] max-w-[320px] w-full   mx-auto rounded-[20px] inline-flex justify-between items-center object-cover gap-8"
       />
       <div className="w-[288px] mx-auto">
         {!data.state ? (
@@ -95,7 +95,7 @@ const LocationCard = ({ open, handleClose, images, data }) => {
       </div>
       <div className="space-y-[24px] w-[288px] mx-auto">
         {" "}
-        <div className="flex flex-row justify-start items-center">
+        <div className="flex flex-row justify-start items-center max-w-max text-wrap">
           {" "}
           <img
             src={m1TrailheadArrow}
@@ -119,7 +119,6 @@ const LocationCard = ({ open, handleClose, images, data }) => {
               National Leadership
             </p>{" "}
             <p
-              className="whitespace-nowrap"
               style={{
                 color: "#FFFF",
                 leadingTrim: "both",

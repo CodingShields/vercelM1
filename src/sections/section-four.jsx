@@ -37,7 +37,7 @@ const MapIcon = ({ onClick }) => {
 
 const ChevronIcon = ({ onClick, flipIcon }) => {
   return (
-    <button onClick={onClick} className={`${flipIcon ? "rotate-180" : ""} `}>
+    <button onClick={onClick} className={`${flipIcon ? "rotate-180" : ""}`}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -57,7 +57,7 @@ const ChevronIcon = ({ onClick, flipIcon }) => {
   );
 };
 
-const SectionTwo = () => {
+const SectionFour = () => {
   const [state, setState] = useState({
     mobileShiftMap: false,
     currentLocation: null,
@@ -88,8 +88,6 @@ const SectionTwo = () => {
   };
 
   const handleMultiMapClick = (loc) => {
-    console.log("Multi map click", loc);
-    console.log("Multi map click", loc);
     setState((prev) => ({
       ...prev,
       currentLocation: loc.id,
@@ -97,12 +95,11 @@ const SectionTwo = () => {
       locationData: loc,
     }));
   };
-  console.log(state);
   return (
-    <div className="self-stretch px-4 pb-24 flex flex-col justify-center items-start gap-4 max-w-[1280px] h-full">
-      <div className="self-stretch px-6 flex flex-col justify-start items-center gap-12">
+    <div className="px-4 pb-24 flex flex-col justify-center items-start gap-4 max-w-[500px] w-full h-auto  ">
+      <div className="self-stretch px-4 flex flex-col justify-center items-center gap-6 overscroll-x-contain">
         <div className="self-stretch flex flex-col justify-start items-start gap-4">
-          <div className="self-stretch text-center justify-start text-SB_Dark-Blue text-8xl font-bold font-[futura-pt-bold] leading-[84px] min-w-[420px]">
+          <div className="self-stretch text-center justify-start text-SB_Dark-Blue text-6xl sm:text-8xl font-bold font-[futura-pt-bold] sm:leading-[84px] leading-16">
             Imagine the Impact
           </div>
         </div>
@@ -111,87 +108,67 @@ const SectionTwo = () => {
             If just 300 people gave one day's salary – for example, $200 – we
             could fully fund the construction of a church in{" "}
           </span>
-          <span class="text-SB_Dark-Blue text-lg font-bold font-[futura-pt-bold] leading-normal">
+          <span class="text-SB_Dark-Blue text-lg font-bold font-[futura-pt-bold] ">
             Kikanda, Congo
           </span>
-          <span class="text-SB_Dark-Blue text-lg font-normal font-[futura-pt] leading-normal">
+          <span class="text-SB_Dark-Blue text-lg font-normal font-[futura-pt] ">
             .<br />
             And if 2,500 of us join together, we can build all 12 church
             buildings in:{" "}
           </span>
-          <span class="text-SB_Dark-Blue text-lg font-bold font-[futura-pt-bold] leading-normal">
+          <span class="text-SB_Dark-Blue text-lg font-bold font-[futura-pt-bold] ">
             Nepal, The Congo, Senegal, Cuba, Burkina Faso, Kenya, Zimbabwe, El
             Salvador, India
           </span>
         </div>
       </div>
-      <div
-        className={` relative rounded-[20px] inline-flex justify-start items-start gap-12 overflow-hidden w-full h-full max-w-[1248px] lg:max-h-[702px]  max-h-[645px]   
-          ${
-            state.mobileShiftMap ? "-translate-x-[450px]" : "-translate-x-0"
-          } transition-all ease-linear duration-500 
-         `}
-      >
-        {" "}
-        <LocationCard
-          open={state.modalOpen && state.currentLocation}
-          data={state.locationData}
-          images={state?.locationData?.images}
-          handleClose={() =>
-            setState({
-              ...state,
-              modalOpen: false,
-              currentLocation: null,
-              locationData: null,
-              multiMapOptions: false,
-            })
-          }
-        />
-        <img
-          className="w-full h-full object-cover object-center"
-          src={mapImage}
-        />
-        {locationData.map((location) => {
-          return (
-            <div key={location.id} className={location.className}>
-              <button onClick={() => handleMapClick(location)}>
-                <MapIcon />{" "}
-              </button>
-              {state.multiMapOptions && location.hasMultiple && (
-                <div className="bg-SB_Dark_Blue flex flex-col justify-center items-start gap-2 text-m1 font-[futura-pt-medium] underline  text-sm p-3 rounded-lg translate-x-4 -translate-y-[120px] z-[9999]">
-                  {location?.locations?.map((loc) => (
-                    <button
-                      key={loc.id}
-                      onClick={() => handleMultiMapClick(loc)}
-                    >
-                      {loc.location}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          );
-        })}
-        <div
-          className={`${
-            state.mobileShiftMap
-              ? "translate-x-[880px]"
-              : "translate-x-[424px] "
-          }  top-[601px] absolute bg-m1 rounded-lg flex justify-start items-center gap-2 transition-all ease-linear duration-500 lg:hidden `}
-        >
-          <ChevronIcon
-            flipIcon={state.mobileShiftMap}
-            onClick={() =>
+      <div className="w-full overflow-x-auto">
+        <div className="relative min-w-[1248px] h-[702px] rounded-[20px] inline-flex justify-start items-start gap-12">
+          {" "}
+          <LocationCard
+            open={state.modalOpen && state.currentLocation}
+            data={state.locationData}
+            images={state?.locationData?.images}
+            handleClose={() =>
               setState({
                 ...state,
-                mobileShiftMap: !state.mobileShiftMap,
+                modalOpen: false,
+                currentLocation: null,
+                locationData: null,
+                multiMapOptions: false,
               })
             }
           />
+          <img
+            src={mapImage}
+            className="min-w-[1248px] h-full object-cover object-center bg-[#f0f0f0]"
+            alt="map"
+          />
+          {locationData.map((location) => {
+            return (
+              <div key={location.id} className={location.className}>
+                <button onClick={() => handleMapClick(location)}>
+                  <MapIcon />{" "}
+                </button>
+                {state.multiMapOptions && location.hasMultiple && (
+                  <div className="bg-SB_Dark_Blue flex flex-col justify-center items-start gap-2 text-m1 font-[futura-pt-medium] underline  text-sm p-3 rounded-lg translate-x-4 -translate-y-[120px] z-[9999]">
+                    {location?.locations?.map((loc) => (
+                      <button
+                        key={loc.id}
+                        onClick={() => handleMultiMapClick(loc)}
+                      >
+                        {loc.location}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };
 
-export default SectionTwo;
+export default SectionFour;

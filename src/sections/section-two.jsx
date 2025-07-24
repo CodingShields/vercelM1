@@ -1,15 +1,15 @@
 import { Play } from "lucide-react";
 const SectionTwo = () => {
   return (
-    <div className="flex flex-col mx-auto  justify-start gap-[64px]  sm:px-[48px] pb-[96px] max-w-[500px] sm:max-h-[896px]  sm:w-[1280px] w-auto sm:min-w-full">
+    <div className="flex flex-col mx-auto  justify-start gap-[64px] px-[24px]  sm:px-[48px] pb-[96px] max-w-[500px]  sm:w-[1280px] w-auto sm:min-w-full overscroll-contain">
       <div className="bg-[#E4E4E4] flex flex-col items-start self-stretch gap-[32px]  py-[32px] px-[24px] md:p-[72px] rounded-2xl mx-auto w-full max-w-[1184px] min-h-fit max-h-[800px]">
-        <div className="flex flex-col items-start gap-[8px] max-w-[404px] sm:max-w-[960px] ">
-          <p className="font-futura-pt text-[#11121C] text-[14px]  font-medium uppercase leading-[8px] tracking-[3.36px] ">
+        <div className="flex flex-col items-start gap-[8px] max-w-[404px] sm:max-w-[960px] w-full">
+          <p className="font-futura-pt text-[#11121C] text-[14px]  font-medium uppercase leading-[24px] sm:leading-[8px] tracking-[3.36px] text-center sm:text-normal ">
             One Mission. One Message. One Day.
           </p>
-          <p className="text-SB_Dark-Blue text-6xl font-bold font-['futura-pt-bold'] leading-[64px] self-stretch justify-start ">
+          <p className="text-SB_Dark-Blue text-5xl sm:text-6xl font-bold font-['futura-pt-bold'] leading-[48px] sm:leading-[64px] self-stretch justify-start ">
             One Day Can Change{" "}
-            <span class="text-m1 text-6xl font-bold font-['futura-pt-bold'] leading-[64px]">
+            <span class="text-m1 text-5xl sm:text-6xl font-bold font-['futura-pt-bold'] leading-[64px]">
               Everything
             </span>
           </p>

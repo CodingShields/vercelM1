@@ -1,17 +1,18 @@
 import SectionOne from "./sections/section-one";
 import SectionTwo from "./sections/section-two";
 import SectionThree from "./sections/section-three";
-import SectionFour from "./sections/section";
+import SectionFour from "./sections/section-four";
 import SectionFive from "./sections/section-five";
 import SectionSix from "./sections/section-six";
 function App() {
   return (
-    <div className="w-full  overflow-y-scroll scroll-smooth flex flex-col items-start justify-start bg-[#f0f0f0]">
+    <div className=" bg-[#F0F0F0]  min-h-screen h-auto">
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-      {/* <SectionFive /> */}
-      {/* <SectionSix /> */}
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
     </div>
   );
 }
