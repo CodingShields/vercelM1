@@ -1,24 +1,22 @@
-import sectionThreeImage from "../../public/images/section-three-image.jpg";
-
 const SectionFour = () => {
   return (
-    <div className="w-[1280px] px-[160px] pb-[96px] flex flex-col items-start gap-[10px]  max-h-[726px] h-auto mx-auto">
-      <div className="self-stretch columns-2 flex   items-center	  gap-[48px]  h-auto max-h-[630px] w-full max-w-[960px] ">
-        <div className="flex flex-col justify-center items-start gap-6 flex-1 basis-0 grow-0 w-full max-w-[456px] h-auto">
-          <div className="self-stretch justify-start text-SB_Dark_Blue text-[64px] font-bold font-[futura-pt-bold] leading-[64px]  max-h-[107px] w-full h-full pb-[24px]">
+    <div className="w-full max-w-[500px] sm:w-[1280px] lg::px-[160px] pb-[96px] flex flex-col items-start self-stretch  gap-[10px]  min-h-[1301px] sm:max-h-[726px] h-auto mx-auto">
+      <div className="self-stretch columns-1 lg:columns-2 flex flex-col lg:flex-row  justify-center items-start sm:items-center	  gap-[48px]  h-auto min-h-[1205px] sm:max-h-[630px] w-full sm:max-w-[960px] max-w-[452px]">
+        <div className="flex flex-col justify-center items-start gap-10 sm:gap-6 flex-1 basis-0 grow-0 w-full max-w-[452px] max-h-[527px] sm:max-w-[456px] h-full">
+          <h2 className="self-stretch justify-start text-SB_Dark_Blue text-[64px] font-bold font-[futura-pt-bold] leading-[64px]  max-h-[107px] h-auto mx-auto tracking-[-2.56px]">
             The Power of Your One Day
-          </div>
-          <div className="self-stretch justify-start text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal min-h-full h-[84px] min-h-auto pb-[24px] w-[456px] ">
+          </h2>
+          <p className="self-stretch justify-start text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] text-[18px]  max-w-[456px] w-full leading-6 min-h-[84px] h-full ">
             What does one day look like for you? A morning coffee, a quick bite,
             a scroll through your phone – these moments make up our days. We
             spend, we stream, we shop. Our one day's salary covers our immediate
             needs and desires.
-          </div>
-          <div className=" text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal h-[12px] pb-[24px]  ">
+          </p>
+          <p className=" text-SB_Dark_Blue  font-normal font-[`futura-pt`] text-[18px] self-stretch mt-4 ">
             But what if your one day could build something eternal?
-          </div>
-          <div>
-            <span class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-normal">
+          </p>
+          <div className="min-h-[252px] h-auto max-w-[452px] w-full ">
+            <span class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-6">
               Your “One Day” can provide:
               <br />
             </span>
@@ -65,7 +63,7 @@ const SectionFour = () => {
             </ul>
           </div>
         </div>
-        <div className="flex sm:h-[630px] p-9 flex-col items-start gap-6  rounded-[20px] bg-[url('/images/section-three-image.jpg')] bg-cover bg-no-repeat max-w-[456px] w-full" />
+        <div className="flex h-[630px] p-9 flex-col items-start gap-6  rounded-[20px] bg-[url('/images/section-three-image.jpg')] bg-cover bg-no-repeat max-w-[456px] w-full mt-[48px]" />
       </div>
     </div>
   );
