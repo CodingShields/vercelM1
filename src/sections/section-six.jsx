@@ -10,8 +10,8 @@ const SectionSix = () => {
     window.location.href = `fb://facewebmodal/f?href=https://www.facebook.com/sharer/sharer.php?u=${url}`;
   };
   return (
-    <div className="flex flex-col items-center justify-center max-w-[500px] h-full max-h-[800px]  lg:px-[160px] pb-[96px]  px-8">
-      <div className="lg:px-[160px] pb-[48px] text-center px-[16px] ">
+    <div className="w-full px-[24px] sm:px-[48px] lg:px-[160px] flex flex-col items-center justify-start gap-[10px] pb-[96px] mx-auto max-w-[1280px]">
+      <div className="text-center max-w-[960px] w-full mb-[48px]">
         <h1
           className="mb-[24px] mx-auto "
           style={{
@@ -29,7 +29,7 @@ const SectionSix = () => {
           Share the Mission.
         </h1>
         <p
-          className=" mx-auto max-w-[452px] h-auto max-h-[60px] w-full self-stretch lg:text-center  "
+          className="  max-w-[640px] h-auto max-h-[36px] w-full self-stretch text-center mx-auto "
           style={{
             leadingTrim: "both",
             textEdge: "cap",
@@ -47,8 +47,8 @@ const SectionSix = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-[32px] lg:p-[32px] rounded-2xl justify-center items-center bg-[#FFFFFF] lg:w-[960px] max-w-[408px] p-[32px] w-full py-4 mt-[48px]">
-        <div className=" w-full">
+      <div className="flex flex-col lg:flex-row gap-[32px] bg-white rounded-2xl justify-center items-center w-full max-w-[960px] p-[32px]">
+        <div className="w-full max-w-[456px]">
           <h1
             className="border-b-[3px] border-black pb-[10px] lg:text-left lg:whitespace-nowrap text-center "
             style={{
@@ -67,7 +67,7 @@ const SectionSix = () => {
           </h1>
 
           <p
-            className="my-[16px] lg:text-left text-center"
+            className="my-[16px] lg:text-left text-center "
             style={{
               leadingTrim: "both",
               textEdge: "cap",
@@ -121,7 +121,7 @@ const SectionSix = () => {
         <img
           src={sectionOneImage}
           alt="section-one-image"
-          className="rounded-2xl max-w-[388px] max-h-[250px] object-cover self-stretch h-auto"
+          className="rounded-2xl max-w-[388px] max-h-[218px] lg:max-w-[456px] object-cover self-stretch h-auto mx-auto"
         />
       </div>
     </div>

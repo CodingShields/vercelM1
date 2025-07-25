@@ -96,14 +96,14 @@ const SectionFour = () => {
     }));
   };
   return (
-    <div className="px-4 pb-24 flex flex-col justify-center items-start gap-4 max-w-[500px] w-full h-auto  ">
-      <div className="self-stretch px-4 flex flex-col justify-center items-center gap-6 overscroll-x-contain">
+    <div className="px-4 pb-[96px] flex flex-col justify-start items-start gap-4 max-w-[500px] w-full sm:max-w-[1280px] h-[1102]   mx-auto ">
+      <div className="self-stretch px-[24px] flex flex-col justify-center items-center gap-12  md:px-[144px] max-h-[468px] h-auto mt-[96px]">
         <div className="self-stretch flex flex-col justify-start items-start gap-4">
           <div className="self-stretch text-center justify-start text-SB_Dark-Blue text-6xl sm:text-8xl font-bold font-[futura-pt-bold] sm:leading-[84px] leading-16">
             Imagine the Impact
           </div>
         </div>
-        <div className="self-stretch text-center justify-start">
+        <div className="self-stretch text-center sm:text-left justify-start max-w-[960px] mx-auto">
           <span class="text-SB_Dark-Blue text-lg font-normal font-[futura-pt] leading-normal">
             If just 300 people gave one day's salary – for example, $200 – we
             could fully fund the construction of a church in{" "}
@@ -122,8 +122,8 @@ const SectionFour = () => {
           </span>
         </div>
       </div>
-      <div className="w-full overflow-x-auto">
-        <div className="relative min-w-[1248px] h-[702px] rounded-[20px] inline-flex justify-start items-start gap-12">
+      <div className="w-full overflow-x-auto overscroll-y-none overflow-y-hidden flex flex-col min-h-max">
+        <div className="relative w-[1248px] h-[702px] rounded-[20px] inline-flex justify-start items-start gap-12">
           {" "}
           <LocationCard
             open={state.modalOpen && state.currentLocation}
@@ -141,7 +141,7 @@ const SectionFour = () => {
           />
           <img
             src={mapImage}
-            className="min-w-[1248px] h-full object-cover object-center bg-[#f0f0f0]"
+            className="w-[1248px] h-[702px]  object-cover object-center bg-[#f0f0f0]"
             alt="map"
           />
           {locationData.map((location) => {

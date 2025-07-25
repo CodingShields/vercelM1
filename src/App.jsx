@@ -6,7 +6,7 @@ import SectionFive from "./sections/section-five";
 import SectionSix from "./sections/section-six";
 function App() {
   return (
-    <div className=" bg-[#F0F0F0]  min-h-screen h-auto">
+    <div className=" bg-[#f0f0f0]  min-h-screen h-auto w-full   mx-auto  inline-flex flex-col justify-start items-start ">
       <SectionOne />
       <SectionTwo />
       <SectionThree />
