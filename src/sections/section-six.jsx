@@ -10,10 +10,10 @@ const SectionSix = () => {
     window.location.href = `fb://facewebmodal/f?href=https://www.facebook.com/sharer/sharer.php?u=${url}`;
   };
   return (
-    <div className="w-full px-[24px] sm:px-[48px] lg:px-[160px] flex flex-col items-center justify-start gap-[10px] pb-[96px] mx-auto max-w-[1280px]">
+    <div className="w-full px-[24px] sm:px-[48px] lg:px-[136px] flex flex-col items-center justify-start gap-[10px] pb-[96px] mx-auto max-w-[1280px]">
       <div className="text-center max-w-[960px] w-full mb-[48px]">
         <h1
-          className="mb-[24px] mx-auto "
+          className="sm:mb-[24px] mx-auto "
           style={{
             leadingTrim: "both",
             textEdge: "cap",
@@ -47,7 +47,7 @@ const SectionSix = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-[32px] bg-white rounded-2xl justify-center items-center w-full max-w-[960px] p-[32px]">
+      <div className="flex flex-col lg:flex-row gap-[32px] bg-white rounded-2xl justify-center items-center w-full max-w-[960px] p-[32px] mt-4 sm:mt-0">
         <div className="w-full max-w-[456px]">
           <h1
             className="border-b-[3px] border-black pb-[10px] lg:text-left lg:whitespace-nowrap text-center "
@@ -121,7 +121,7 @@ const SectionSix = () => {
         <img
           src={sectionOneImage}
           alt="section-one-image"
-          className="rounded-2xl max-w-[388px] max-h-[218px] lg:max-w-[456px] object-cover self-stretch h-auto mx-auto"
+          className="rounded-2xl w-[388px]  max-h-[218px] sm:max-w-[456px] object-cover self-stretch h-auto mx-auto"
         />
       </div>
     </div>
