@@ -1,6 +1,6 @@
-const SectionThree = () => {
+const SectionFour = () => {
   return (
-    <div className="w-full lg:px-[72px] xl:px-[160px] pb-[96px] px-[24px] flex-col items-start justify-start lg:justify-center inline-flex self-stretch  gap-[10px]  max-h-[1301px] lg:max-h-[726px] h-auto mx-auto">
+    <div className="w-full lg:px-[64px] xl:px-[160px] mb-[96px] px-[24px] flex-col items-start justify-start lg:justify-center inline-flex self-stretch  gap-[10px]  max-h-[1301px] lg:max-h-[1301px] h-auto mx-auto">
       <div className="self-stretch  flex flex-col lg:flex-row  justify-start items-start sm:items-center	 gap-[64px]  sm:gap-[48px]  h-auto  xl:min-h-[527px] w-full sm:max-w-[960px] max-w-[452px] mx-auto ">
         <div className="flex flex-col justify-center items-center flex-1   w-full min-h-[527px] max-w-[456px] md:max-w-[736px] lg:max-w-[456px] h-auto">
           <div className="self-stretch justify-start text-SB_Dark_Blue text-[56px] sm:text-[64px] font-bold font-[futura-pt-bold] leading-[64px]  max-h-[107px] h-auto tracking-[-2.56px] md:w-[600px] lg:w-full  mx-auto text-center lg:text-left">
@@ -15,7 +15,7 @@ const SectionThree = () => {
           <div className=" text-SB_Dark_Blue  font-normal font-[`futura-pt`] text-[18px] self-stretch text-center pb-[24px]">
             But what if your one day could build something eternal?
           </div>
-          <div className="max-h-[252px] h-auto max-w-[452px]  w-full ">
+          <div className="max-h-[252px] h-auto max-w-[452px]  w-full mb-32 sm:mb-16 md:mb-8">
             <span class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
               Your “One Day” can provide:
               <br />
@@ -69,4 +69,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default SectionFour;
