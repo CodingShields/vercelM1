@@ -16,14 +16,14 @@ const SectionFour = () => {
             But what if your one day could build something eternal?
           </div>
           <div className="max-h-[252px] h-auto max-w-[452px]  w-full ">
-            <span class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-6">
+            <span class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
               Your “One Day” can provide:
               <br />
             </span>
             <ul className="list-disc list-outside pl-10">
-              <li class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-normal tracking-tight">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-normal tracking-tight">
                 A roof and solid walls:{" "}
-                <span class="text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-normal">
                   {" "}
                   A gathering place constructed with bricks protecting
                   congregations from the elements and providing a safe space to
@@ -32,9 +32,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-normal">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-normal">
                 A spiritual home:{" "}
-                <span class="text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-normal">
                   {" "}
                   An environment where individuals can learn, grow in their
                   faith, and thrive in Jesus.
@@ -42,9 +42,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-normal">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-normal">
                 A vital hub for the community:{" "}
-                <span class="text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-normal">
                   {" "}
                   A central point for connection, mutual support, and a beacon
                   of enduring hope.
@@ -52,9 +52,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-md font-bold font-[`futura-pt`] leading-normal">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-normal">
                 A lasting legacy of faith:{" "}
-                <span class="text-SB_Dark_Blue text-md font-normal font-[`futura-pt`] leading-normal">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-normal">
                   {" "}
                   A wellspring, developing leaders who will go on to plant many
                   more churches and multiply the impact.
