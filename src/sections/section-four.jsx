@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import mapImage from "../assets/map-image.png";
 import locationData from "../assets/location-data";
 import LocationCard from "../components/LocationCard";
@@ -62,12 +62,11 @@ const SectionFour = () => {
     mobileShiftMap: false,
     currentLocation: null,
     multiMapOptions: false,
+    modalOpen: false,
   });
+  const locationCardRef = useRef(null);
 
   const handleMapClick = (location) => {
-    const hasMultiple = location.hasMultiple;
-    console.log(hasMultiple);
-    console.log(location);
     if (location.hasMultiple) {
       setState({
         ...state,
@@ -75,8 +74,6 @@ const SectionFour = () => {
         currentLocation: location.id,
       });
     } else {
-      console.log(location);
-
       setState({
         ...state,
         multiMapOptions: false,
@@ -95,6 +92,30 @@ const SectionFour = () => {
       locationData: loc,
     }));
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        state.modalOpen &&
+        locationCardRef.current &&
+        !locationCardRef.current.contains(event.target)
+      ) {
+        setState((prev) => ({
+          ...prev,
+          modalOpen: false,
+          currentLocation: null,
+          locationData: null,
+          multiMapOptions: false,
+        }));
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [state.modalOpen]);
+
   return (
     <div className="px-4 pb-[96px] flex flex-col justify-start items-start gap-4 max-w-[500px] w-full sm:max-w-[1280px] h-[1102]   mx-auto mt-8 sm:mt-0">
       <div className="self-stretch px-[24px] flex flex-col justify-center items-center gap-12  md:px-[64px] lg:px-[104px] max-h-[468px] h-auto mt-[96px]">
@@ -126,7 +147,8 @@ const SectionFour = () => {
         <div className="relative w-[1248px] h-[702px] rounded-[20px] inline-flex justify-start items-start gap-12">
           {" "}
           <LocationCard
-            open={state.modalOpen && state.currentLocation}
+            ref={locationCardRef}
+            open={state.currentLocation}
             data={state.locationData}
             images={state?.locationData?.images}
             handleClose={() =>
