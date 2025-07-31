@@ -2,7 +2,7 @@ import sectionFiveImage from "../assets/section-five-image.png";
 const SectionFive = () => {
   return (
     <div className="w-full flex-col items-center justify-start sm:justify-center inline-flex flex-1self-stretch  gap-x-2.5	   mx-auto pb-24  lg:px-40 md:px-14 px-6">
-      <div className="self-stretch  grid grid-cols-1 lg:grid-cols-2 sm:items-center justify-center mx-auto	 gap-x-12">
+      <div className="self-stretch  grid grid-cols-1 lg:grid-cols-2 sm:items-center justify-center mx-auto	 gap-12">
         <img
           src={sectionFiveImage}
           alt="section-five-image"

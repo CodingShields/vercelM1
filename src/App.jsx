@@ -6,7 +6,7 @@ import SectionFive from "./sections/section-five";
 import SectionSix from "./sections/section-six";
 function App() {
   return (
-    <div className="   inline-flex flex-col justify-center items-center w-full">
+    <div className="   inline-flex flex-col  items-start w-full bg-[#f0f0f0]">
       <SectionOne />
       <SectionTwo />
       <SectionThree />

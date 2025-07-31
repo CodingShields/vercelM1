@@ -1,9 +1,9 @@
 const SectionFour = () => {
   return (
-    <div className="w-full flex-col items-start justify-start sm:justify-center inline-flex self-stretch  gap-[10px]   pb-24  px-40 md:px-14 ">
-      <div className="self-stretch  grid grid-cols-1 xl:grid-cols-2 justify-center mx-auto	 gap-12">
-        <div className="flex-col justify-center items-start flex-1 space-y-4 max-w-[456px] w-full        ">
-          <div className="self-stretch justify-start text-SB_Dark_Blue text-[64px] font-bold font-[futura-pt-bold] leading-[64px] tracking-[-2.56px] text-center lg:text-left">
+    <div className="max-w-[1280px] w-full flex-col items-start justify-start sm:justify-center inline-flex self-stretch  gap-[10px] h-fit  pb-24 px-16 md:px-32 lg:px-40 mx-auto ">
+      <div className="self-stretch  grid grid-cols-1 lg:grid-cols-2 justify-center mx-auto	 gap-12">
+        <div className="flex-col justify-center items-start flex-1 space-y-4  w-full        ">
+          <div className="self-stretch justify-start text-SB_Dark_Blue text-[64px] font-bold font-[futura-pt-bold] leading-[64px] tracking-[-2.56px]  sm:text-left">
             The Power of Your One Day
           </div>
           <div className="self-stretch justify-start text-SB_Dark_Blue font-normal font-[`futura-pt`] text-[18px]  leading-6 ">
@@ -63,7 +63,7 @@ const SectionFour = () => {
             </ul>
           </div>
         </div>
-        <div className="flex-1 h-[630px] max-w-[456px] w-full p-9 flex-col items-start gap-12  rounded-[20px] bg-[url('/images/section-three-image.jpg')] bg-cover bg-no-repeat" />
+        <div className="flex-1 h-[630px] max-w-[456px] w-full p-9 flex-col items-start mx-auto gap-12  rounded-[20px] bg-[url('/images/section-three-image.jpg')] bg-cover bg-no-repeat" />
       </div>
     </div>
   );
