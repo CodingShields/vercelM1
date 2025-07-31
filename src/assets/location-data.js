@@ -49,7 +49,7 @@ const locationData = [
     cost: "$35,000",
     images: [nepalImageOne, nepalImageTwo, nepalImageThree],
     className:
-      "absolute top-80 left-96 translate-x-[460px] -translate-y-[104px] cursor-pointer hover:scale-110",
+      "absolute top-80 left-96 translate-x-[455px] -translate-y-[104px] cursor-pointer ",
   },
   {
     id: 1,
@@ -197,7 +197,7 @@ const locationData = [
       "The church is currently meeting rented building owned by Muslims",
     cost: "$75,000",
     images: [indiaGuImageOne, indiaGuImageTwo, indiaGuImageThree],
-    className: "absolute top-56 left-48 translate-x-[675px] cursor-pointer",
+    className: "absolute top-56 left-48 translate-x-[685px] cursor-pointer",
   },
   {
     id: 11,
