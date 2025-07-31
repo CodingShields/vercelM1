@@ -10,7 +10,7 @@ const LocationCard = forwardRef(({ open, handleClose, images, data }, ref) => {
       ref={ref}
       className="fixed z-40 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 mt-4"
     >
-      <div className="w-[336px] px-6 pt-3 pb-6 bg-m1-BG rounded-[20px] shadow-[0px_0px_30px_0px_rgba(0,0,0,0.15)] inline-flex flex-col justify-start items-start gap-3 bg-[#31302B] scale-90 sm:scale-100">
+      <div className="w-[336px] px-6 pt-3 pb-6 bg-m1-BG  shadow-black shadow-sm rounded-[20px]  inline-flex flex-col justify-start items-start gap-3 bg-[#31302B] scale-90 sm:scale-100">
         {/* Existing content */}
         <div className="flex flex-row justify-between items-center w-full ">
           <div className="flex flex-row justify-center items-center space-x-[8px]">

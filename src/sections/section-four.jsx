@@ -4,7 +4,7 @@ import locationData from "../assets/location-data";
 import LocationCard from "../components/LocationCard";
 const MapIcon = ({ onClick }) => {
   return (
-    <button onClick={() => onClick()} className="hover:cursor-pointer">
+    <button onClick={() => onClick()}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="48"
@@ -35,28 +35,6 @@ const MapIcon = ({ onClick }) => {
   );
 };
 
-const ChevronIcon = ({ onClick, flipIcon }) => {
-  return (
-    <button onClick={onClick} className={`${flipIcon ? "rotate-180" : ""}`}>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-      >
-        <path
-          d="M9 18L15 12L9 6"
-          stroke="white"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </button>
-  );
-};
-
 const SectionFour = () => {
   const [state, setState] = useState({
     mobileShiftMap: false,
@@ -67,6 +45,9 @@ const SectionFour = () => {
   const locationCardRef = useRef(null);
 
   const handleMapClick = (location) => {
+    const hasMultiple = location.hasMultiple;
+    console.log(hasMultiple);
+    console.log(location);
     if (location.hasMultiple) {
       setState({
         ...state,
@@ -74,6 +55,8 @@ const SectionFour = () => {
         currentLocation: location.id,
       });
     } else {
+      console.log(location);
+
       setState({
         ...state,
         multiMapOptions: false,
@@ -109,12 +92,11 @@ const SectionFour = () => {
         }));
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [state.modalOpen]);
+  });
 
   return (
     <div className="px-4 pb-[96px] flex flex-col justify-start items-start gap-4 max-w-[500px] w-full sm:max-w-[1280px] h-[1102]   mx-auto mt-8 sm:mt-0">
@@ -148,7 +130,7 @@ const SectionFour = () => {
           {" "}
           <LocationCard
             ref={locationCardRef}
-            open={state.currentLocation}
+            open={state.modalOpen}
             data={state.locationData}
             images={state?.locationData?.images}
             handleClose={() =>
@@ -169,21 +151,21 @@ const SectionFour = () => {
           {locationData.map((location) => {
             return (
               <div key={location.id} className={location.className}>
-                <button onClick={() => handleMapClick(location)}>
-                  <MapIcon />{" "}
-                </button>
-                {state.multiMapOptions && location.hasMultiple && (
-                  <div className="bg-SB_Dark_Blue flex flex-col justify-center items-start gap-2 text-m1 font-[futura-pt-medium] underline  text-sm p-3 rounded-lg translate-x-4 -translate-y-[120px] z-[9999]">
-                    {location?.locations?.map((loc) => (
-                      <button
-                        key={loc.id}
-                        onClick={() => handleMultiMapClick(loc)}
-                      >
-                        {loc.location}
-                      </button>
-                    ))}
-                  </div>
-                )}
+                <MapIcon onClick={() => handleMapClick(location)} />{" "}
+                {state.multiMapOptions &&
+                  location.hasMultiple &&
+                  location.id === state.currentLocation && (
+                    <div className="bg-SB_Dark_Blue flex flex-col justify-center items-start gap-2 text-m1 font-[futura-pt-medium] underline  text-sm p-3 rounded-lg translate-x-6 -translate-y-[125px] z-[9999]">
+                      {location?.locations?.map((loc) => (
+                        <button
+                          key={loc.id}
+                          onClick={() => handleMultiMapClick(loc)}
+                        >
+                          {loc.location}
+                        </button>
+                      ))}
+                    </div>
+                  )}
               </div>
             );
           })}
