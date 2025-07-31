@@ -7,11 +7,10 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "remoteApp", // Unique name for this remote app
-      filename: "remoteEntry.js", // Output filename for the remote entry
+      name: "remoteApp",
+      filename: "remoteEntry.js",
       exposes: {
         "./App": {
-          // Expose the main App component
           import: "./src/App.jsx",
           dontAppendStylesToHead: true,
         },
