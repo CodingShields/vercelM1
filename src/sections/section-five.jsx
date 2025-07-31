@@ -17,8 +17,14 @@ const SectionFive = () => {
             single day's earnings can lay the foundation for generations of
             faith and community around the world.
           </p>
-          <button className="px-8 py-6 rounded-2xl tracking-widest flex justify-center items-center bg-[#EEA030] text-white text-[20px] font-semibold font-[futura-pt] gap-2.5 max-h-[61px]">
-            Give Now
+          <button className="px-8 py-6 rounded-2xl active:translate-y-1 transition-all ease-in-out duration-100  tracking-widest flex justify-center items-center bg-[#EEA030] text-white text-[20px]  font-[futura-pt-medium] gap-2.5 max-h-[61px]">
+            <a
+              href="https://ppay.co/AWP5iOl5e_k"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Give Now
+            </a>
           </button>
         </div>
       </div>

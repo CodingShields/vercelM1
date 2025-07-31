@@ -53,7 +53,7 @@ const SectionSix = () => {
       <div className="flex lg:flex-row flex-col  gap-8 bg-SB_White rounded-2xl w-full p-8 items-center justify-center mx-auto">
         <div className=" flex flex-col flex-1  items-start ">
           <div className="gap-6 flex flex-col flex-1 items-center self-stretch pb-6 ">
-            <h1 className="text-center lg:text-left w-full   text-5xl  gap-4 whitespace-nowrap font-[futura-pt-bold] text-SB_Dark-Blue leading-8 border-b-2 border-solid border-[#11121C] pb-4 tracking-[-1.6px] ">
+            <h1 className="text-center lg:text-left w-full   text-5xl  gap-4  font-[futura-pt-bold] text-SB_Dark-Blue leading-10 border-b-2 border-solid border-[#11121C] pb-4 tracking-[-1.6px] ">
               Spread the Word
             </h1>
 
@@ -68,7 +68,7 @@ const SectionSix = () => {
             className="mx-auto lg:mx-0 flex flex-row gap-2  justify-center items-center px-6 py-4  bg-[#EEA030] text-white w-auto rounded-2xl"
           >
             <Share2Icon className="w-6 h-6" />
-            <p>Share M1Day</p>
+            <p className="text-[20px] font-[futura-pt-medium]">Share M1Day</p>
           </button>
         </div>
         <div className="w-full md:w-[456px] h-auto rounded-2xl flex justify-center">
