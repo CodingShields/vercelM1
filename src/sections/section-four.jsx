@@ -99,10 +99,10 @@ const SectionFour = () => {
   });
 
   return (
-    <div className="px-4 pb-[96px] flex flex-col justify-start items-start gap-4 max-w-[500px] w-full sm:max-w-[1280px] h-[1102]   mx-auto mt-8 sm:mt-0">
-      <div className="self-stretch px-[24px] flex flex-col justify-center items-center gap-12  md:px-[64px] lg:px-[104px] max-h-[468px] h-auto mt-[96px]">
+    <div className="px-4 pb-[96px] flex flex-col justify-start items-start gap-4  w-full sm:max-w-[1280px]    mx-auto ">
+      <div className="self-stretch px-6 md:px-16 lg:px-36 flex flex-col  items-center justify-center gap-12  ">
         <div className="self-stretch flex flex-col justify-start items-start gap-4">
-          <div className="self-stretch text-center justify-start text-SB_Dark-Blue text-6xl sm:text-8xl font-bold font-[futura-pt-bold] sm:leading-[84px] leading-16">
+          <div className="self-stretch text-center justify-start text-SB_Dark-Blue text-[84px]  font-bold font-[futura-pt-bold] sm:leading-[84px] leading-[84px] tracking-[-4.2px]">
             Imagine the Impact
           </div>
         </div>

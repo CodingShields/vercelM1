@@ -1,8 +1,8 @@
 import { Play } from "lucide-react";
 const SectionTwo = () => {
   return (
-    <div className="flex flex-col  justify-start items-center gap-16 px-6   pb-24 max-w-[1280px] w-full mx-auto">
-      <div className="bg-[#E4E4E4] flex flex-col items-start self-stretch gap-[32px]  py-[32px] px-[24px] md:p-[72px] rounded-2xl mx-auto w-full max-w-[1184px] min-h-fit max-h-[800px]">
+    <div className="self-stretch px-6 lg:px-12 py-24 inline-flex flex-col justify-center  items-start overflow-hidden max-w-[1280px] w-full mx-auto">
+      <div className="bg-[#E4E4E4] flex flex-col items-start self-stretch gap-[32px]  py-8 px-6 md:px-12 md:p-[72px] rounded-2xl mx-auto  min-h-fit max-h-[800px] w-full">
         <div className="flex flex-col items-start gap-2 ">
           <p className="font-['futura-pt-bold']  text-[#11121C] text-sm   uppercase leading-6  tracking-[3.36px] text-center  ">
             One Mission. One Message. One Day.
