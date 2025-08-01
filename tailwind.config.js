@@ -11,6 +11,7 @@ export default {
         m1: "#EEA030",
         SB_White: "#fff",
         SB_Dark_Blue: "#11121C",
+        SB_Blue: "#2C82C5",
       },
     },
   },

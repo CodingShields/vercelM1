@@ -4,9 +4,11 @@ import SectionThree from "./sections/section-three";
 import SectionFour from "./sections/section-four";
 import SectionFive from "./sections/section-five";
 import SectionSix from "./sections/section-six";
+import DummyHeader from "./components/DummyHeader";
 function App() {
   return (
     <div className="   inline-flex flex-col  items-start w-full bg-[#f0f0f0]">
+      <DummyHeader />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
