@@ -6,24 +6,24 @@ const SectionFour = () => {
           <div className="self-stretch justify-start text-SB_Dark_Blue text-[64px] font-bold font-[futura-pt-bold] leading-[64px] tracking-[-2.56px]  sm:text-left">
             The Power of Your One Day
           </div>
-          <div className="self-stretch justify-start text-SB_Dark_Blue font-normal font-[`futura-pt`] text-[18px]  leading-6 ">
+          <div className="self-stretch justify-start text-SB_Dark_Blue font-normal font-[futura-pt] text-[18px]  leading-6 ">
             What does one day look like for you? A morning coffee, a quick bite,
             a scroll through your phone – these moments make up our days. We
             spend, we stream, we shop. Our one day's salary covers our immediate
             needs and desires.
           </div>
-          <div className=" text-SB_Dark_Blue  font-normal font-[`futura-pt`] text-[18px] self-stretch">
+          <div className=" text-SB_Dark_Blue  font-normal font-[futura-pt] text-[18px] self-stretch">
             But what if your one day could build something eternal?
           </div>
           <div>
-            <span class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
+            <span class="text-SB_Dark_Blue text-[18px] font-bold font-[futura-pt] leading-6">
               Your “One Day” can provide:
               <br />
             </span>
             <ul className="list-disc list-inside pl-2.5">
-              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6 tracking-tight">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[futura-pt] leading-6 tracking-tight">
                 A roof and solid walls:{" "}
-                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-6">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[futura-pt] leading-6">
                   {" "}
                   A gathering place constructed with bricks protecting
                   congregations from the elements and providing a safe space to
@@ -32,9 +32,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[futura-pt] leading-6">
                 A spiritual home:{" "}
-                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-6">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[futura-pt] leading-6">
                   {" "}
                   An environment where individuals can learn, grow in their
                   faith, and thrive in Jesus.
@@ -42,9 +42,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[futura-pt] leading-6">
                 A vital hub for the community:{" "}
-                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-6">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[futura-pt] leading-6">
                   {" "}
                   A central point for connection, mutual support, and a beacon
                   of enduring hope.
@@ -52,9 +52,9 @@ const SectionFour = () => {
                 </span>
               </li>
 
-              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[`futura-pt`] leading-6">
+              <li class="text-SB_Dark_Blue text-[18px] font-bold font-[futura-pt] leading-6">
                 A lasting legacy of faith:{" "}
-                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[`futura-pt`] leading-6">
+                <span class="text-SB_Dark_Blue text-[18px] font-normal font-[futura-pt] leading-6">
                   {" "}
                   A wellspring, developing leaders who will go on to plant many
                   more churches and multiply the impact.

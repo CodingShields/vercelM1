@@ -1,12 +1,9 @@
-import instagramIcon from "../assets/icons/instagram-icon.svg";
-import facebookIcon from "../assets/icons/facebook-icon.svg";
-import shareIcon from "../assets/icons/share-icon.svg";
 import { Share2Icon } from "lucide-react";
 import sagebrushm1dayshareimage from "/images/Sagebrush-m1Day-share-image.jpg";
 const SectionSix = () => {
   const handleImageFileShare = async () => {
     try {
-      const response = await fetch("/images/Sagebrush-m1Day-share-image.jpg"); // Relative path to public image
+      const response = await fetch("/images/Sagebrush-m1Day-share-image.jpg");
       const blob = await response.blob();
       const file = new File([blob], "Sagebrush-m1Day-share-image.jpg", {
         type: blob.type,
@@ -18,23 +15,13 @@ const SectionSix = () => {
           text: "Join us!",
           files: [file],
         });
-        console.log("Image shared!");
       } else {
         alert("File sharing not supported on this device.");
       }
     } catch (err) {
-      console.error("Error sharing image file:", err);
+      console.error(err);
+      alert("Error sharing image.");
     }
-  };
-
-  const openFacebookShare = () => {
-    const pageUrl = "https://sagebrush.church/m1day";
-    window.open(
-      `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-        pageUrl
-      )}`,
-      "_blank"
-    );
   };
 
   return (

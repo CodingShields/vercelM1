@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import mapImage from "../assets/map-image.png";
+import mapImage from "/images/map-image-min.png";
 import locationData from "../assets/location-data";
 import LocationCard from "../components/LocationCard";
 const MapIcon = ({ onClick }) => {

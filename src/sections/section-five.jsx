@@ -1,4 +1,4 @@
-import sectionFiveImage from "../assets/section-five-image.png";
+import sectionFiveImage from "/images/section-five-image.png";
 const SectionFive = () => {
   return (
     <div className="w-full flex-col items-center justify-start sm:justify-center inline-flex flex-1self-stretch  gap-x-2.5	   mx-auto pb-24  lg:px-40 md:px-14 px-6">
