@@ -22,6 +22,8 @@ const SectionFive = () => {
               href="https://ppay.co/AWP5iOl5e_k"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ fontWeight: "600" }}
+              className="select-none "
             >
               Give Now
             </a>

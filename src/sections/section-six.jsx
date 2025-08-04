@@ -3,27 +3,17 @@ import sagebrushm1dayshareimage from "/images/Sagebrush-m1Day-share-image.jpg";
 const SectionSix = () => {
   const handleImageFileShare = async () => {
     try {
-      const response = await fetch("/images/Sagebrush-m1Day-share-image.jpg");
-      const blob = await response.blob();
-      const file = new File([blob], "Sagebrush-m1Day-share-image.jpg", {
-        type: blob.type,
+      await navigator.share({
+        title: "One Mission, One Message, One Day",
+        text: "Join us!",
+        url: "https://storage.googleapis.com/sbcms/images/Sagebrush-m1Day-share-image.original.jpg",
       });
-
-      if (navigator.canShare && navigator.canShare({ files: [file] })) {
-        await navigator.share({
-          title: "One Mission, One Message, One Day",
-          text: "Join us!",
-          files: [file],
-        });
-      } else {
-        alert("File sharing not supported on this device.");
-      }
     } catch (err) {
       console.error(err);
       alert("Error sharing image.");
     }
   };
-
+  // https://storage.googleapis.com/sbcms/images/Sagebrush-m1Day-share-image.original.jpg
   return (
     <div className=" flex-col items-start  flex self-stretch  gap-2.5	   mx-auto pb-24  sm:px-40  px-6 max-w-[1280px] w-full overflow-hidden">
       <div className="text-center  pb-12  flex flex-col justify-center items-center self-stretch gap-6 lg:px-40">
@@ -51,11 +41,12 @@ const SectionSix = () => {
           </div>
 
           <button
+            style={{ fontWeight: "600" }}
             onClick={handleImageFileShare}
-            className="mx-auto lg:mx-0 flex flex-row gap-2  justify-center items-center px-6 py-4  bg-[#EEA030] text-white w-auto rounded-2xl"
+            className="px-8 py-6 rounded-2xl active:translate-y-1 transition-all ease-in-out duration-100  tracking-widest flex justify-center items-center bg-[#EEA030] text-white text-[20px]  font-[futura-pt-medium] gap-2.5 max-h-[61px]"
           >
             <Share2Icon className="w-6 h-6" />
-            <p className="text-[20px] font-[futura-pt-medium]">Share M1Day</p>
+            Share M1Day
           </button>
         </div>
         <div className="w-full md:w-[456px] h-auto rounded-2xl flex justify-center">

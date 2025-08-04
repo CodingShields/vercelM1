@@ -8,7 +8,7 @@ const LocationCard = forwardRef(({ open, handleClose, images, data }, ref) => {
   return (
     <div
       ref={ref}
-      className="fixed z-40 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 mt-4"
+      className="fixed left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 mt-4 z-[9999]"
     >
       <div className="w-[336px] px-6 pt-3 pb-6 bg-m1-BG  shadow-black shadow-sm rounded-[20px]  inline-flex flex-col justify-start items-start gap-3 bg-[#31302B] scale-90 sm:scale-100">
         {/* Existing content */}
